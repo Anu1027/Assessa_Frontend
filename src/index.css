@@ -1,10 +1,16 @@
+/* Tailwind CSS Directives */
+@tailwind base;          /* Resets and normalizes default browser styles */
+@tailwind components;    /* Includes Tailwind's component classes */
+@tailwind utilities;     /* Includes Tailwind's utility classes */
+
+/* Global Styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; /* Enhances font rendering */
+  -moz-osx-font-smoothing: grayscale;  /* Enhances font rendering on macOS */
 }
 
 code {

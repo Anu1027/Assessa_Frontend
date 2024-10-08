@@ -1,0 +1,93 @@
+/* Navbar custom styles */
+.navbar {
+  background-color: white; /* Ensure consistent background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0;
+  width: 100%; /* Make it span the full width of the page */
+  z-index: 20; /* Ensure it stays on top of other elements */
+}
+
+/* Add margin-top to the body or main content to avoid overlap with the fixed navbar */
+body {
+  margin-top: 60px; /* Adjust this value based on your navbar height */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem; /* Adjust padding for consistent alignment */
+  padding-right: 2rem;
+}
+
+.navbar-logo {
+  margin-right: 3rem; /* Adjust spacing between logo and nav links */
+}
+
+/* Adjust this margin to move the logo to the right in desktop view */
+@media (min-width: 768px) {
+  .navbar-logo {
+      margin-left: 7rem; /* Add left margin to move the logo to the right */
+  }
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.0rem; /* Adjust gap for spacing between nav links */
+}
+
+.navbar-actions {
+  margin-left: 2.5rem; /* Adjust spacing between nav links and action buttons */
+  margin-right: 5.5rem;
+  display: flex;
+  gap: 1rem; /* Space between Login and Start Free buttons */
+}
+
+button {
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  .navbar-container {
+      padding-left: 1rem; /* Adjust padding for mobile view */
+      padding-right: 1rem;
+  }
+
+  .navbar-links {
+      display: none; /* Hide nav links in mobile view */
+  }
+
+  .navbar-actions {
+      display: none; /* Hide action buttons in mobile view */
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-links {
+      display: flex;
+      gap: 2rem; /* Adjust gap for desktop view */
+  }
+
+  .navbar-actions {
+      display: flex; /* Ensure action buttons display on desktop */
+  }
+}
+
+/* Larger screen adjustments (optional breakpoint) */
+@media (min-width: 1024px) {
+  .navbar-logo {
+      margin-left: 5rem; /* Further adjust the logo on larger screens if needed */
+  }
+
+  .navbar-actions {
+      margin-right: 4rem; /* Adjust the spacing of the action buttons */
+  }
+}

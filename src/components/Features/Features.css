@@ -1,0 +1,10 @@
+.feature-card {
+    @apply bg-white rounded-lg shadow-lg p-6 mb-6 hover:shadow-xl transition duration-300;
+  }
+  .feature-heading {
+    @apply text-xl font-semibold mb-2;
+  }
+  .feature-text {
+    @apply text-gray-600;
+  }
+  

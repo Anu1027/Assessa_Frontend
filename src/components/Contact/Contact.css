@@ -1,0 +1,133 @@
+/* Contact Section Styling */
+.contact-section {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffbfb; /* Background color for the section */
+  height: 100vh; /* Set a height for the contact section */
+}
+
+/* Split Screen Layout */
+.split-screen-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: auto;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Image Section */
+.contact-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4a4a, #ff7474);
+  overflow: hidden;
+  position: relative; /* Ensure the image is positioned correctly */
+}
+
+.contact-image {
+  position: absolute; /* Position the image absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Cover the full width */
+  height: 100%; /* Cover the full height */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Contact Form Section */
+.contact-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff; /* White background for the form */
+  padding: 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+.contact-heading {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f30101, #fa9b02); /* Gradient colors */
+  -webkit-background-clip: text; /* Ensures the background is applied only to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text color transparent to reveal the gradient */
+  font-family: Inter;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Icons in Form Fields */
+.input-icon {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded edges for a more modern look */
+  padding: 0 10px;
+  transition: border-color 0.3s;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-icon .icon {
+  margin-right: 10px;
+  color: #000000; /* Changed icon color to black for better contrast */
+}
+
+.textarea-field {
+  height: 120px;
+  resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(90deg, #f30101, #f93d5c); /* Darker red gradient for the button */
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .split-screen-container {
+    flex-direction: column;
+  }
+
+  .contact-form-container,
+  .contact-image-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .contact-form-container {
+    padding: 20px;
+  }
+}
